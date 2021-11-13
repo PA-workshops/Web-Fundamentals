@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Weather App - Home Page</title>
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <!-- TODO 2c): add bootstrap styling -->
+    <nav class="weather-navbar">
+      <a href="index.html">Home</a>
+    </nav>
+
+    <!-- TODO 1a): Add a header to the page! (h1 tag) -->
+
+    <div class="page-content">
+      <div id="weather-info">
+        <h3 id="weather-blurb">Waiting to get weather...</h3>
+      </div>
+      <div class="cities">
+        <div id="cities-1">
+          <h2>List of Cities:</h2>
+
+          <!-- TODO 2a): Add ID attributes to "New York" and "Los Angeles" -->
+          <ul>
+            <li id="boston">Boston</li>
+            <li>New York</li>
+            <li>Los Angeles</li>
+          </ul>
+        </div>
+
+        <div id="cities-2">
+          <h2>Select a city below to retrieve the weather for that location...</h2>
+
+          <!-- TODO 1b): Add a dropdown to select the same 3 cities. -->
+
+          <!-- TODO 1c): Add a dropdown to select temperature unit. -->
+
+          <!-- TODO 1d): Add a button to retrieve the weather based on the seleted city + temperature unit. -->
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+      integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

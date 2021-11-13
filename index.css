@@ -1,0 +1,30 @@
+.page-content #cities-1 #boston {
+  color: purple;
+}
+
+/* TODO 2a): Add text colors for New York and LA. */
+
+.page-content {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.page-content .cities {
+  /* TODO 2b): Add flex display attribute. */
+}
+
+ /* TODO 2b): Make it so cities-2 takes up twice as much space as cities-1 on the page. */
+
+.page-content #cities-1 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.page-content #cities-2 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.weather-navbar {
+  /* TODO 2c): Add background and border colors to the navbar. */
+}
