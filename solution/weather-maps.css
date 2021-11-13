@@ -1,0 +1,11 @@
+.weather-navbar {
+  background-color: lightskyblue;
+  border-color: lightskyblue;
+}
+
+.page-content h1 {
+  padding-left: 15px;
+  padding-right: 15px;
+
+  font-family: 'Roboto', cursive, sans-serif !important;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Weather App - Maps!</title>
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="weather-maps.css" />
+    <script src="weather-maps.js"></script>
+  </head>
+  <body>
+    <!-- add nav bar later on -->
+    <nav class="navbar navbar-default weather-navbar">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <a class="navbar-brand selected" href="weather-maps.html">Weather Maps</a>
+    </nav>
+
+    <div class="page-content">
+      <h1>Maps!</h1>
+
+      <select id="city-dropdown" onchange="onCitySelected()">
+        <option value="Boston">Boston</option>
+        <option value="New York">New York</option>
+        <option value="Los Angeles">Los Angeles</option>
+      </select>
+
+      <h2 id="city-header">Select a city below to get historical weather for it...</h2>
+
+      <div>
+        <iframe
+          id="weather-map-iframe"
+          width="100%"
+          height="600px"
+          src="https://openweathermap.org/weathermap?basemap=map&cities=true&layer=temperature&lat=42&lon=-71&zoom=7"
+        />
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+      integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Weather App - Home Page</title>
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-default weather-navbar">
+      <a class="navbar-brand selected" href="index.html">Home</a>
+      <a class="navbar-brand" href="weather-maps.html">Weather Maps</a>
+    </nav>
+
+    <div class="page-content">
+      <div id="weather-info">
+        <h1>Weather App - Home Page</h1>
+
+        <!-- TODO css (text color?) -->
+        <!-- do an example of class name and id  -->
+        <h3 id="weather-blurb">Waiting to get weather...</h3>
+
+        <img id="weather-icon" src="" />
+      </div>
+      <div class="cities">
+        <div id="cities-1">
+          <h2>List of Cities:</h2>
+
+          <ul>
+            <li id="boston">Boston</li>
+            <li id="new-york">New York</li>
+            <li id="la">Los Angeles</li>
+          </ul>
+        </div>
+
+        <div id="cities-2">
+          <h2>Select a city below to retrieve the weather for that location...</h2>
+          <select id="city-dropdown">
+            <option value="Boston">Boston</option>
+            <option value="New York">New York</option>
+            <option value="Los Angeles">Los Angeles</option>
+          </select>
+
+          <select id="temperature-unit-dropdown">
+            <option value="imperial">F</option>
+            <option value="metric">C</option>
+            <option value="standard">K</option>
+          </select>
+
+          <button onclick="getWeather()">Get weather data</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+      integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
